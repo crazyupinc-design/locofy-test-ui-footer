@@ -1,6 +1,7 @@
 .logoIcon {
+  align-self: stretch;
+  max-height: 100%;
   width: 141px;
-  height: 36px;
   object-fit: cover;
 }
 .column,
@@ -10,8 +11,10 @@
   justify-content: flex-start;
 }
 .logoWrapper {
+  height: 52px;
   flex-direction: row;
   padding: var(--padding-base) 0 0;
+  box-sizing: border-box;
 }
 .column {
   width: 320px;
@@ -59,8 +62,9 @@
   gap: 32px;
 }
 .columns {
-  width: 960px;
-  justify-content: space-between;
+  align-self: stretch;
+  justify-content: center;
+  gap: var(--gap-21xl);
 }
 .text {
   flex: 1;
@@ -90,9 +94,19 @@
   flex-direction: column;
   padding: 64px 24px 8px;
   justify-content: flex-start;
-  gap: 40px;
+  gap: var(--gap-21xl);
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--color-gray);
   font-family: var(--font-inter);
+}
+@media screen and (max-width: 480px) {
+  .column1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .columns,
+  .smallColumns {
+    flex-direction: column;
+  }
 }
