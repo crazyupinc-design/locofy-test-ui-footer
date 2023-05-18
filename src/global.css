@@ -11,13 +11,18 @@ body {
   --font-size-sm: 14px;
 
   /* Colors */
+  --color-whitesmoke: #f5f7fa;
+  --color-darkslategray: #333;
   --color-gray: #212121;
 
   /* Gaps */
   --gap-21xl: 40px;
+  --gap-xs: 12px;
   --gap-base: 16px;
   --gap-5xs: 8px;
 
   /* Paddings */
+  --padding-45xl: 64px;
+  --padding-5xl: 24px;
   --padding-base: 16px;
 }

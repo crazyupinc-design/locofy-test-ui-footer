@@ -4,7 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Footer from "./pages/footer";
+import FooterModified from "./pages/footer-modified";
 import { useEffect } from "react";
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Footer />} />
+      <Route path="/" element={<FooterModified />} />
     </Routes>
   );
 }

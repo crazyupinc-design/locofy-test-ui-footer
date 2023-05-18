@@ -11,60 +11,75 @@
   justify-content: flex-start;
 }
 .logoWrapper {
+  width: 178px;
   height: 52px;
   flex-direction: row;
   padding: var(--padding-base) 0 0;
   box-sizing: border-box;
 }
 .column {
-  width: 320px;
+  flex: 1;
   flex-direction: column;
+}
+.company,
+.link {
+  position: relative;
+  line-height: 150%;
 }
 .company {
   align-self: stretch;
-  position: relative;
-  line-height: 150%;
 }
-.footerLinks {
-  align-self: stretch;
-  gap: var(--gap-5xs);
+.link {
+  display: inline-block;
+  width: 178.67px;
 }
-.column1,
 .content,
 .footerLinks {
-  display: flex;
+  align-self: stretch;
   flex-direction: column;
+}
+.footerLinks {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: var(--gap-5xs);
 }
 .content {
-  align-self: stretch;
   gap: var(--gap-base);
 }
-.column1 {
-  flex: 1;
+.columnParent,
+.content,
+.content1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.link7 {
+.columnParent {
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.content1 {
+  height: 145px;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.link7,
+.link8 {
   position: relative;
   line-height: 150%;
+  display: inline-block;
+  width: 129px;
 }
-.columns,
-.smallColumns {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.smallColumns {
-  width: 600px;
-  padding: var(--padding-base) 0 0;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  gap: 32px;
+.link8 {
+  width: 92px;
 }
 .columns {
   align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  gap: var(--gap-21xl);
 }
 .text {
   flex: 1;
@@ -72,7 +87,7 @@
   line-height: 150%;
 }
 .copyright,
-.footer {
+.footerModified {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -84,15 +99,15 @@
   padding: var(--padding-base) 0;
   justify-content: center;
   text-align: center;
-  color: #333;
+  color: var(--color-darkslategray);
 }
-.footer {
+.footerModified {
   position: relative;
-  background-color: #f5f7fa;
+  background-color: var(--color-whitesmoke);
   width: 100%;
   overflow: hidden;
   flex-direction: column;
-  padding: 64px 24px 8px;
+  padding: var(--padding-45xl) var(--padding-5xl) 0;
   justify-content: flex-start;
   gap: var(--gap-21xl);
   text-align: left;
@@ -100,13 +115,13 @@
   color: var(--color-gray);
   font-family: var(--font-inter);
 }
-@media screen and (max-width: 480px) {
-  .column1 {
+@media screen and (max-width: 760px) {
+  .columnParent {
     flex: unset;
     align-self: stretch;
   }
-  .columns,
-  .smallColumns {
+  .columns {
     flex-direction: column;
+    gap: var(--gap-21xl);
   }
 }
