@@ -87,7 +87,7 @@
   line-height: 150%;
 }
 .copyright,
-.footerModified {
+.footer {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -101,7 +101,7 @@
   text-align: center;
   color: var(--color-darkslategray);
 }
-.footerModified {
+.footer {
   position: relative;
   background-color: var(--color-whitesmoke);
   width: 100%;

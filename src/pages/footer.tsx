@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import styles from "./footer-modified.module.css";
 const FooterModified: FunctionComponent = () => {
   return (
-    <div className={styles.footerModified}>
+    <div className={styles.footer}>
       <div className={styles.columns}>
         <div className={styles.columnParent}>
           <div className={styles.column}>
