@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
-import styles from "./footer-modified.module.css";
-const FooterModified: FunctionComponent = () => {
+import styles from "./footer.module.css";
+const Footer: FunctionComponent = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.columns}>
@@ -51,4 +51,4 @@ const FooterModified: FunctionComponent = () => {
   );
 };
 
-export default FooterModified;
+export default Footer;
